@@ -1,16 +1,37 @@
+import { Link as ScrollLink, Element } from "react-scroll";
 import "../Css/header.css";
+import Projects from "./Projects";
+import Skills from "./Skills";
+import Experience from "./Experience";
 
 function HomePage() {
   return (
     <>
-      <nav className="flex justify-between items-center px-8 py-4 bg-[#1B1B1B] text-white  rounded-lg max-w-6xl mx-auto">
+      <nav className="flex justify-between items-center px-8 py-4 bg-[#1B1B1B] text-white rounded-lg max-w-6xl mx-auto">
         {/* Left Side - Navigation Links */}
         <ul className="flex space-x-6">
           <li className="hover:text-gray-400 cursor-pointer">Home</li>
-          <li className="hover:text-gray-400 cursor-pointer">Case Studies</li>
-          <li className="hover:text-gray-400 cursor-pointer">Testimonials</li>
-          <li className="hover:text-gray-400 cursor-pointer">Recent Work</li>
-          <li className="hover:text-gray-400 cursor-pointer">Get In Touch</li>
+          <li className="hover:text-gray-400 cursor-pointer">
+            <a href="src/assets/Yagit_Gadhok_Resume.pdf" download>
+              Resume
+            </a>
+          </li>
+          <li className="hover:text-gray-400 cursor-pointer">
+            <ScrollLink to="experience-section" smooth={true} duration={500}>
+              Experience
+            </ScrollLink>
+          </li>
+          <li className="hover:text-gray-400 cursor-pointer">
+            <ScrollLink to="projects-section" smooth={true} duration={500}>
+              Projects
+            </ScrollLink>
+          </li>
+          <li className="hover:text-gray-400 cursor-pointer">
+            <ScrollLink to="skills-section" smooth={true} duration={500}>
+              Skills
+            </ScrollLink>
+          </li>
+          <li className="hover:text-gray-400 cursor-pointer">Contact</li>
         </ul>
 
         {/* Right Side - Social Icons */}
@@ -20,7 +41,7 @@ function HomePage() {
         </div>
       </nav>
 
-      <div className="header-content flex items-center justify-between px-8 py-4 mx-auto my-4 max-w-6xl  text-white ">
+      <div className="header-content flex items-center justify-between px-8 py-4 mx-auto my-4 max-w-6xl text-white">
         {/* Left Section - Text */}
         <span className="w-1/2">
           <h1 className="text-3xl font-bold">Hello, I'm Yagit Gadhok</h1>
@@ -40,32 +61,41 @@ function HomePage() {
         </span>
       </div>
 
-      <div className="mt-16 p-10 rounded-lg ">
+      <div className="mt-16 p-10 rounded-lg">
         <h2 className="text-3xl font-semibold mb-6 text-center">Worked with</h2>
         <ul className="flex flex-wrap justify-center gap-8">
           <li>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Tata_Consultancy_Services_Logo.svg"
               alt="TCS Logo"
-              className="w-40 h-20 rounded-sm border-2 border-gray-300 shadow-md"
+              className="w-40 h-20 rounded-sm border-2 border-gray-800 shadow-md"
             />
           </li>
           <li>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/a/a2/DRDO_Seal.png"
               alt="DRDO Logo"
-              className="w-40 h-20 rounded-sm border-2 border-gray-300 shadow-md"
+              className="w-40 h-20 rounded-sm border-2 border-gray-800 shadow-md"
             />
           </li>
           <li>
             <img
               src="https://cdn.brandfetch.io/idpJPAzMcl/theme/light/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1696101043602"
               alt="Sopra Steria Logo"
-              className="w-40 h-20 rounded-sm border-2 border-gray-300 shadow-md"
+              className="w-40 h-20 rounded-sm border-2 border-gray-800 shadow-md"
             />
           </li>
         </ul>
       </div>
+      <Element name="projects-section">
+        <Projects />
+      </Element>
+      <Element name="skills-section">
+        <Skills />
+      </Element>
+      <Element name="experience-section">
+        <Experience />
+      </Element>
     </>
   );
 }

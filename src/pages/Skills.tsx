@@ -3,6 +3,7 @@ import React from "react";
 export const Skills = () => {
   return (
     <div>
+      <h1>skills</h1>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iure nesciunt
       mollitia. Vero architecto eligendi nostrum ex magnam iste, labore nesciunt
       quod, ea, corrupti iure id inventore. Quaerat aspernatur natus aut sit

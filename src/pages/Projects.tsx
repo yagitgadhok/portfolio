@@ -3,6 +3,7 @@ import React from "react";
 export const Projects = () => {
   return (
     <>
+      <h1> projects</h1>
       <div className="mt-16 p-10 rounded-lg">
         Projects Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
         fugiat, autem iusto quibusdam hic ex officia nulla, commodi repudiandae

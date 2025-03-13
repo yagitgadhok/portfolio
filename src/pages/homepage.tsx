@@ -3,14 +3,20 @@ import "../Css/header.css";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import Experience from "./Experience";
+import { Contact } from "./Contact";
 
 function HomePage() {
   return (
     <>
-      <nav className="flex justify-between items-center px-8 py-4 bg-[#1B1B1B] text-white rounded-lg max-w-6xl mx-auto">
+      <Element name="top" />
+      <nav className="sticky top-0 z-50 flex justify-between items-center px-8 py-4 bg-[#1B1B1B] text-white rounded-lg max-w-7xl mx-auto">
         {/* Left Side - Navigation Links */}
-        <ul className="flex space-x-6">
-          <li className="hover:text-gray-400 cursor-pointer">Home</li>
+        <ul className="flex space-x-8">
+          <li className="hover:text-gray-400 cursor-pointer">
+            <ScrollLink to="top" smooth={true} duration={500}>
+              Home
+            </ScrollLink>
+          </li>
           <li className="hover:text-gray-400 cursor-pointer">
             <a href="src/assets/Yagit_Gadhok_Resume.pdf" download>
               Resume
@@ -31,7 +37,11 @@ function HomePage() {
               Skills
             </ScrollLink>
           </li>
-          <li className="hover:text-gray-400 cursor-pointer">Contact</li>
+          <li className="hover:text-gray-400 cursor-pointer">
+            <ScrollLink to="contacts-section" smooth={true} duration={500}>
+              Contact
+            </ScrollLink>
+          </li>
         </ul>
 
         {/* Right Side - Social Icons */}
@@ -46,8 +56,11 @@ function HomePage() {
         <span className="w-1/2">
           <h1 className="text-3xl font-bold">Hello, I'm Yagit Gadhok</h1>
           <p className="text-lg mt-2">
-            I'm a Frontend Developer with a passion for creating beautiful and
-            user-friendly interfaces.
+            Senior Full Stack Developer specializing in Angular, React, Node.js,
+            and Express.js. With 3+ years of experience, I have expertise in
+            building scalable, high-performance web applications, optimizing
+            frontend and backend architectures, and developing reusable UI
+            component libraries.
           </p>
         </span>
 
@@ -61,40 +74,17 @@ function HomePage() {
         </span>
       </div>
 
-      <div className="mt-16 p-10 rounded-lg">
-        <h2 className="text-3xl font-semibold mb-6 text-center">Worked with</h2>
-        <ul className="flex flex-wrap justify-center gap-8">
-          <li>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Tata_Consultancy_Services_Logo.svg"
-              alt="TCS Logo"
-              className="w-40 h-20 rounded-sm border-2 border-gray-800 shadow-md"
-            />
-          </li>
-          <li>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a2/DRDO_Seal.png"
-              alt="DRDO Logo"
-              className="w-40 h-20 rounded-sm border-2 border-gray-800 shadow-md"
-            />
-          </li>
-          <li>
-            <img
-              src="https://cdn.brandfetch.io/idpJPAzMcl/theme/light/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1696101043602"
-              alt="Sopra Steria Logo"
-              className="w-40 h-20 rounded-sm border-2 border-gray-800 shadow-md"
-            />
-          </li>
-        </ul>
-      </div>
+      <Element name="experience-section">
+        <Experience />
+      </Element>
       <Element name="projects-section">
         <Projects />
       </Element>
       <Element name="skills-section">
         <Skills />
       </Element>
-      <Element name="experience-section">
-        <Experience />
+      <Element name="contacts-section">
+        <Contact />
       </Element>
     </>
   );

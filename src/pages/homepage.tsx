@@ -4,6 +4,7 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import Experience from "./Experience";
 import { Contact } from "./Contact";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 function HomePage() {
   return (
@@ -46,8 +47,12 @@ function HomePage() {
 
         {/* Right Side - Social Icons */}
         <div className="flex space-x-4">
-          <i className="fab fa-linkedin text-xl cursor-pointer hover:text-gray-400"></i>
-          <i className="fab fa-github text-xl cursor-pointer hover:text-gray-400"></i>
+          <a href="https://github.com/yagitgadhok">
+            <FaGithub className="text-xl hover:text-purple-400 cursor-pointer" />
+          </a>
+          <a href="https://www.linkedin.com/in/yagitgadhok/">
+            <FaLinkedin className="text-xl hover:text-blue-400 cursor-pointer" />
+          </a>
         </div>
       </nav>
 
@@ -74,16 +79,16 @@ function HomePage() {
         </span>
       </div>
 
-      <Element name="experience-section">
+      <Element name="experience-section" className="p-10">
         <Experience />
       </Element>
-      <Element name="projects-section">
+      <Element name="projects-section" className="p-10">
         <Projects />
       </Element>
-      <Element name="skills-section">
+      <Element name="skills-section" className="p-10 pb-50">
         <Skills />
       </Element>
-      <Element name="contacts-section">
+      <Element name="contacts-section" className="p-10">
         <Contact />
       </Element>
     </>

@@ -24,7 +24,7 @@ export const Contact = () => {
         {/* Left Section - Image & Contact Info */}
         <div className="relative">
           <img
-            src="public/assets/modern-monitor-elegant-table.jpg" // Replace with your image
+            src="/assets/modern-monitor-elegant-table.jpg" // Replace with your image
             alt="Workspace"
             className="w-full h-full object-cover rounded-lg"
           />

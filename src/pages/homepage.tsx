@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 function HomePage() {
   const navItems = [
     { name: "Home", to: "top" },
-    { name: "Resume", href: "public/assets/Yagit_Gadhok_Resume.pdf" },
+    { name: "Resume", href: "/assets/Yagit_Gadhok_Resume.pdf" },
     { name: "Experience", to: "experience-section" },
     { name: "Projects", to: "projects-section" },
     { name: "Skills", to: "skills-section" },
@@ -89,7 +89,7 @@ function HomePage() {
         {/* Right Section - Image */}
         <span className="w-1/2 flex justify-end pt-10">
           <img
-            src="public/assets/img.jpg"
+            src="/assets/img.jpg"
             alt="Yagit Gadhok"
             className="w-80 h-80 rounded-full object-cover"
           />

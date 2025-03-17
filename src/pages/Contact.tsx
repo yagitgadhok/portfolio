@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Contact = () => {
   const {
@@ -19,7 +19,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen bg-[#0A0A0A] text-white flex items-center justify-center px-6">
+    <section className="min-h-screen bg-[#0A0A0A] text-white flex items-center justify-center px-6 w-full">
       <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 bg-[#111]  rounded-lg shadow-lg">
         {/* Left Section - Image & Contact Info */}
         <div className="relative">

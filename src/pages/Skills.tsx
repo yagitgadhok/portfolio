@@ -30,7 +30,7 @@ export const Skills = () => {
   return (
     <section className="bg-black text-white py-12 px-6">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8">Expertise</h2>
+        <h2 className="text-5xl font-bold mb-8 font-serif">Expertise</h2>
 
         {/* Marquee Effect */}
         <Marquee

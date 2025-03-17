@@ -1,9 +1,9 @@
 
-#PortFolio
+# PortFolio
 
 🚀 Live Demo
 
-🔗 Visit the App - [Yagit_Portfolio](https://yagitgadhok-portfolio.onrender.com/)
+🔗 Visit the Site - [Yagit_Portfolio](https://yagitgadhok-portfolio.onrender.com/)
 
 
 # React + TypeScript + Vite

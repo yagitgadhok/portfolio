@@ -5,7 +5,7 @@ const projects = [
     title: "URL Shortener",
     description:
       "Built a URL shortening platform using MongoDB, Express.js, React.js, and Node.js, featuring custom short links, analytics tracking, and secure redirections. 🔗",
-    image: "src/assets/projects/url-shortener.png",
+    image: "public/assets/projects/url-shortener.png",
     tags: ["React", "Node", "MongoDB"],
     github: "https://github.com/yagitgadhok/url-shortener",
   },
@@ -13,7 +13,7 @@ const projects = [
     title: "File Drive",
     description:
       "Developed a cloud-based file storage system using Next.js, Node.js, and Convex, enabling secure file uploads, real-time access, and efficient storage management. 📂",
-    image: "src/assets/projects/file-drive.png",
+    image: "public/assets/projects/file-drive.png",
     tags: ["NextJS", "Node", "Convex"],
     github: "https://github.com/yagitgadhok/file-drive?tab=readme-ov-file",
   },
@@ -21,7 +21,7 @@ const projects = [
     title: "Ecommerce",
     description:
       "Built a full-stack e-commerce platform with secure authentication and optimized performance using MongoDB, Express.js, React.js, and Node.js. Deployed on Render with CI/CD pipelines. 🛒",
-    image: "src/assets/projects/ss1.png",
+    image: "public/assets/projects/ss1.png",
     tags: ["React", "Node", "MongoDB", "Express"],
     github: "https://github.com/yagitgadhok/ecommerce",
   },

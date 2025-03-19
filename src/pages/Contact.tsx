@@ -34,10 +34,13 @@ export const Contact = () => {
             </p>
             <p className="text-sm">📍 Delhi, India</p>
             <div className="flex gap-4 mt-3">
-              <a href="https://github.com/yagitgadhok">
+              <a href="https://github.com/yagitgadhok" target="_blank">
                 <FaGithub className="text-xl hover:text-purple-400 cursor-pointer" />
               </a>
-              <a href="https://www.linkedin.com/in/yagitgadhok/">
+              <a
+                href="https://www.linkedin.com/in/yagitgadhok/"
+                target="_blank"
+              >
                 <FaLinkedin className="text-xl hover:text-blue-400 cursor-pointer" />
               </a>
             </div>

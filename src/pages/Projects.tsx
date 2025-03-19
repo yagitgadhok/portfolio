@@ -48,6 +48,7 @@ export const Projects = () => {
               href={project.github}
               whileHover={{ scale: 1.05, y: -5 }}
               transition={{ duration: 0.3 }}
+              target="_blank"
             >
               <motion.div
                 className="bg-slate-900 rounded-lg p-5 shadow-lg transition duration-300 hover:bg-gradient-to-r hover:from-[rgb(78,57,32)] hover:to-[rgba(175,161,122,0.4)]"
